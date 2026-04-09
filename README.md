@@ -1,6 +1,6 @@
 # Auto NuRec — Dockerized Mono-Camera Reconstruction Pipeline
 
-One-shot Docker pipeline for **NVIDIA NuRec** neural reconstruction from a single (mono) pinhole camera. Runs [COLMAP](https://colmap.github.io/) for structure-from-motion and [3DGUT](https://github.com/nv-tlabs/3dgrut) for dense 3D Gaussian reconstruction, then exports USDZ for [Isaac Sim](https://developer.nvidia.com/isaac-sim).
+One-shot Docker pipeline for **NVIDIA NuRec** neural reconstruction from a single (mono) pinhole camera. Runs [COLMAP](https://colmap.github.io/) for structure-from-motion and [3DGRUT](https://github.com/nv-tlabs/3dgrut) for dense 3D Gaussian reconstruction, then exports USDZ for [Isaac Sim](https://developer.nvidia.com/isaac-sim).
 
 Based on the official workflow: [Reconstruct Scenes from Mono Camera Data](https://docs.nvidia.com/nurec/robotics/neural_reconstruction_mono.html).
 
@@ -8,7 +8,7 @@ Based on the official workflow: [Reconstruct Scenes from Mono Camera Data](https
 
 - **Host**: Linux x86_64 — **aarch64 is not supported** (e.g. DGX Spark / Grace Hopper). Dependencies including `usd-core` (USDZ export) and `gcc_linux-64` (conda) have no aarch64 builds. Build and run this on an x86_64 machine.
 - [NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html) (for GPU access in Docker)
-- **Hardware**: NVIDIA GPU (CUDA 11.8 compatible)
+- **Hardware**: NVIDIA GPU (CUDA 11.8+ compatible)
 - **Input**: Project folder whose only required content is an **`images/`** subfolder with pinhole-camera photos (e.g. smartphone). You do **not** need to install or run COLMAP on your host — the image already includes COLMAP and runs it inside the container.
 
 ## Quick start (images only)
