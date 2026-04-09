@@ -111,5 +111,5 @@ docker run --gpus all --shm-size=8g \
 ## References
 
 - [NuRec — Reconstruct Scenes from Mono Camera Data](https://docs.nvidia.com/nurec/robotics/neural_reconstruction_mono.html)
-- [3DGUT (3D Gaussian Ray Tracing)](https://github.com/nv-tlabs/3dgrut)
+- [3DGRUT (3D Gaussian Ray Tracing)](https://github.com/nv-tlabs/3dgrut)
 - [COLMAP](https://colmap.github.io/)
